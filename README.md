@@ -12,7 +12,7 @@ led = LED(14)
 m("a a23").stringToMorse()
 
 def morseButton():
-    word = text.get()
+    word = (text.get()[:12])
     word = m(word).stringToMorse()
     for char in word:
         if char=='-':
